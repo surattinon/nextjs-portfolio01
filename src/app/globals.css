@@ -17,13 +17,33 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: white;
+  background: rgb(16, 29, 9);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(16, 29, 9, 1) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(16, 29, 9, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(16, 29, 9, 1) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(16, 29, 9, 1) 100%
+  );
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(16, 29, 9, 1) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(16, 29, 9, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#101d09",endColorstr="#101d09",GradientType=1);
 }
 
 @layer utilities {

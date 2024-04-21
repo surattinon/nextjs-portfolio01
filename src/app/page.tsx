@@ -1,21 +1,21 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-start h-[3000px]">
-      <div className="mt-20 text-center p-5">
-        <h1 className="text-3xl mb-5">Home Page</h1>
-        <p>
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-          exercitation amet. Nisi anim cupidatat excepteur officia.
-          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
-          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-          consectetur et est culpa et culpa duis.
-        </p>
+    <main className="flex flex-col items-center justify-start h-screen">
+      <div className="my-36 mx-10 p-5 flex flex-col-reverse md:flex-row justify-center items-center h-1/3">
+        <div className="w-1/3 mr-5 flex flex-col justify-center items-start">
+          <h1 className="md:text-6xl md:text-start text-center text-3xl mb-5">
+            Surattinon
+          </h1>
+          <p className="text-gray-300">
+            Description Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+          </p>
+        </div>
+        <div className="w-1/2 flex justify-center my-20 bg-white/10 backdrop-blur-lg backdrop-brightness-50 px-3 py-3 m-4 h-[200px] border-[1px] border-gray-500 rounded-[10px]">
+          <Image src="/vercel.svg" width={300} height={300} alt="logo" />
+        </div>
       </div>
     </main>
   );
