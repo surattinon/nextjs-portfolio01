@@ -1,8 +1,8 @@
-export default function Home() {
+export default function About() {
   return (
-    <main className="flex flex-col items-center justify-start h-[3000px]">
+    <div className="flex flex-col items-center justify-start h-[3000px]">
       <div className="mt-20 text-center p-5">
-        <h1 className="text-3xl mb-5">Home Page</h1>
+        <h1 className="text-3xl mb-5">Porfolio Page</h1>
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
           enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
@@ -17,6 +17,6 @@ export default function Home() {
           consectetur et est culpa et culpa duis.
         </p>
       </div>
-    </main>
+    </div>
   );
 }
